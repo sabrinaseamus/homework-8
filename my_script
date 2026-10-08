@@ -1,7 +1,11 @@
-name = input("What is your name? ")
-greeting = "Hello, " + name + "!"
+name = input("What is your name? ").strip()     # removed extra spaces
+greeting = f"Hello, {name}!"                    # f-string
 print(greeting)
-print("Length of name:", len(name))
-print("Name in Upper:", name.upper())
-print("Name in Lower:", name.lower())
-print("Type:", type(name))
+
+print("Length of name:        ", len(name))
+print("Name in Upper:         ", name.upper())
+print("Name in Lower:         ", name.lower())
+print("Name capitalized:      ", name.capitalize())
+print("Type:                  ", type(name))
+print("Is alpha (only letters):", name.isalpha())
+print("Poppybanya welcomes you,", name)
